@@ -1,0 +1,106 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border : 0.5px solid #ccc;
+    box-shadow: 2px 4px 4px  #ccc;
+
+    &__header{
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        grid-column-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image{
+        height:8rem;
+    }
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.icon{
+    height: 1.6rem;
+    width:1.6rem;
+    margin-right: 1rem;
+    fill:#757575;
+}
+
+.icon__delete{
+    position: absolute;
+    left:80%;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    
+
+    &:hover{
+        fill:#212121;
+    }
+
+}
+
+%font{
+    font-size: 1.3rem;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color:#00d1b2;
+}
+
+.position{
+    font-size: 1.2rem;
+    margin-top: -0.5rem;
+    font-weight: 600;
+    color:#777;
+}
+
+.department{
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+}
+
+.hr{
+    border: none;
+    background-color: #ccc;
+    height: 2px;
+    margin:1rem;
+    box-shadow: 0.5px 1px 4px  rgba(#ccc,0.7);
+    border-radius: 4px;
+}
+
+.address,.email,.contactNo{
+    @extend %font
+}
+
+.update{
+    font-size: 1.4rem;
+    background-color: #00d1b2;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

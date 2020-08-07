@@ -1,0 +1,63 @@
+.home{
+    display: grid;
+    grid-template-columns: repeat(10 ,[col-start]minmax(min-content , 1fr)[col-end]);
+}
+
+.sidebar{
+
+    grid-column: col-start / col-start 3;
+}
+
+.employees{
+    grid-column: col-end 3  /-1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__header{
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        align-self: center;
+    }
+    
+}
+
+.allEmployees{
+
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit , minmax(20rem,25rem));
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+
+}
+
+.icon{
+    height: 2rem;
+    width:2rem;
+    fill:#fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.icon_plus{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.4rem;
+    fill:#fff;
+}
+
+.add{
+    position: absolute;
+    padding:0.8rem 2rem;
+    align-content: center;
+    color: #fff;
+    left:85%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color:#4281A4;
+    cursor:pointer;
+    border-radius: 10px;
+}

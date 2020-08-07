@@ -1,0 +1,31 @@
+.sidebar{
+
+    display:flex;
+    flex-direction: column;
+
+}
+
+.department{
+    font-weight: bold;
+    color:#4281A4;
+    font-size: 1.5rem;
+    padding:1rem;
+    cursor: pointer;
+    background-color: #fff;
+    transform: translateY(0);
+    transition: transform 0.3s linear;
+
+    &:hover{
+        transform: translateY(-5px);
+    }
+
+    &:active{
+        transform :translateY(2px);
+    }
+}
+
+
+.active{
+    background-color: #00b7c2;
+    color:#fff;
+}
